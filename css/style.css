@@ -1,3 +1,9 @@
-section {
-  border: solid;
+section #nuevoElemento {
+  border: solid 1px;
+  padding: 5px;
+  margin-top: 10px;
 }
+
+/*h2 {
+  text-align: center;
+}*/

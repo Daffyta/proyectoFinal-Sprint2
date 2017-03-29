@@ -3,32 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Trello</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1>Trello</h1>
-    <section style="border: solid 1px; padding: 5px;">
-      <h2>Pendientes de la semana</h2>
-      <ul id="preview">
+    <section id="container">
+      <section id="nuevoElemento">
+        <h2>Pendientes de la semana</h2>
+        <ul id="visualizandoPendienteSemana">
 
-      </ul>
-      <h4>Agregar pendiente</h4>
-      <input type="text" id="textoIngresado">
-      <button id="pendienteSemana" onclick="pendienteSemana()">Crear pendiente</button>
-    </section>
-    <section style="border: solid 1px; padding: 5px;">
-      <h2>Pendientes otra semana</h2>
-      <ul>
+        </ul>
+        <h4>Agregar pendiente</h4>
+        <input type="text" id="textoIngresadoPendienteSemana">
+        <button id="pendienteSemana" onclick="pendienteSemana()">Crear pendiente</button>
+      </section>
+      <!-- <section style="border: solid 1px; padding: 5px;">
+        <h2>Pendientes otra semana</h2>
+        <ul id="visualizandoPendienteOtraSemana">
 
-      </ul>
-      <h4>Agregar pendiente</h4>
-      <input type="text" name="" value="">
-      <button id="pendienteOtraSemana" onclick="pendienteOtraSemana()">Crear pendiente</button>
+        </ul>
+        <h4>Agregar pendiente</h4>
+        <input type="text" id="textoIngresadoPendienteOtraSemana">
+        <button id="pendienteOtraSemana" onclick="pendienteOtraSemana()">Crear pendiente</button>
+      </section> -->
     </section>
 
     <section>
       <h4>Agregar lista</h4>
-      <input type="text" name="" value="">
-      <button type="button" name="button">Crear lista</button>
+      <input type="text" id="listaPendientes">
+      <button id="agregarLista" onclick="agregarLista()">Crear lista</button>
     </section>
 
 
