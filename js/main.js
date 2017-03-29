@@ -1,12 +1,25 @@
-// function seccion(){
-//   for (var i = 0; i < listaPendientes.length; i++) {
-//     var secciones = document.createElement("secction");
-//       for (var j = 0; j < listaPendientes.length; i++) {
-//         var nuevoElemento = document.createElement("section")
-//         var nombreSeccion = document.createElement
-//     }
-//   }
-// }
+var section = [];
+
+function componentes(h2,ul,h4,input,button){
+ this.h2 = h2;
+ this.ul = ul;
+ this.h4 = h4;
+ this.input = input;
+ this.button = button;
+}
+
+function crearComponentesSeccion () {
+  var h2 = document.getElementById("h2");
+  var ul = document.getElementById("ul");
+  var h4 = document.getElementById("h4");
+  var input = document.getElementById("input");
+  var button = document.getElementById("button");
+
+  var componentes = new Componentes (h2.value, ul.value, h4.value, input.value, button.value);
+  section.push(componentes);
+  agregarLista();
+}
+
 function pendienteSemana() {
   var nuevoElementoPendienteSemana = document.getElementById('textoIngresadoPendienteSemana').value;
   var listaPendienteSemana = document.createElement("li");
@@ -25,38 +38,9 @@ function pendienteSemana() {
 
 function agregarLista() {
   var nuevaListaPendientes = document.getElementById('listaPendientes').value;
-  console.log(nuevaListaPendientes);
   var secciones = document.createElement("section");
   secciones.id = "nuevoElemento";
-  console.log(secciones);
   var crearSeccion = document.createTextNode(nuevaListaPendientes);
-  console.log(crearSeccion);
   secciones.appendChild(crearSeccion);
   var secctionCreada = document.getElementById('container').appendChild(secciones);
-  console.log(secctionCreada);
 }
-
-//
-// <p>Click the button to create a "class" attribute with the value "democlass" and insert it to the H1 element above.</p>
-//
-// <button onclick="myFunction()">Try it</button>
-//
-// <script>
-// function myFunction() {
-//     var h1 = document.getElementsByTagName("H1")[0];
-//     var att = document.createAttribute("class");
-//     att.value = "democlass";
-//     h1.setAttributeNode(att);
-// }
-// </script>
-
-// <button onclick="myFunction()">Try it</button>
-//
-// <script>
-// function myFunction() {
-//     var btn = document.createElement("BUTTON");
-//     var t = document.createTextNode("CLICK ME");
-//     btn.appendChild(t);
-//     document.body.appendChild(btn);
-// }
-// </script>
