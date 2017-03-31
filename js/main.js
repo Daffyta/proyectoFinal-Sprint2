@@ -44,3 +44,19 @@ function agregarLista() {
   secciones.appendChild(crearSeccion);
   var secctionCreada = document.getElementById('container').appendChild(secciones);
 }
+
+var botonBorrar = document.createElement('input');
+				botonBorrar.type = "button";
+				botonBorrar.value = "Eliminar tarea";
+			  botonBorrar.onclick = borrarElemento();
+			  nuevaLista.appendChild(botonBorrar);
+
+function borrarElemento(){
+		nuevaLista.removeChild(elementoLi);
+		nuevaLista.removeChild(botonBorrar);
+}
+
+function removerLista(){
+		aquiHareOtraLista.removeChild(nuevaLista);
+		aquiHareOtraLista.removeChild(botonBorrarLista);
+}
